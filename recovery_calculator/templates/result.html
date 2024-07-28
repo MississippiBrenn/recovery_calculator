@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recovery Calculator Result</title>
+</head>
+<body>
+    <h1>Recovery Calculator Result</h1>
+    <p>Probability of Relapse: {{ relapse_prob * 100 }}%</p>
+    <p>Probability of Staying Sober: {{ not_relapse_prob * 100 }}%</p>
+    <h2>Risk Factors</h2>
+    <ul>
+        {% for risk in risk_factors %}
+            <li>{{ risk }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Assets</h2>
+    <ul>
+        {% for asset in assets %}
+            <li>{{ asset }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
